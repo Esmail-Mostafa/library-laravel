@@ -5,6 +5,7 @@
 @foreach ($books as $book)
 <a href="{{route('books.show' , $book -> id)}}"><h2>{{$book ->title}}</h2></a>
 <p>{{$book ->desc}}</p>
+<img src="{{$book ->img}}" >
 <a class="btn btn-primary w-25 m-2"  href="{{route('books.edit' , $book -> id)}}">Edit</a>
 <a class="btn btn-success w-25 m-2"   href="{{route('books.show' , $book -> id)}}">show</a>
 <a class="btn btn-danger w-25 m-2"  href="{{route('books.delete' , $book -> id)}}">delete</a>
